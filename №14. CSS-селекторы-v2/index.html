@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин наушников</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="/" class="nav__link nav__link--active">Главная</a></li>
+        <li>
+          <a href="/catalog" class="nav__link">Каталог</a>
+          <ul class="submenu">
+            <li><a href="/catalog/over-ear" class="nav__link">Накладные</a></li>
+            <li><a href="/catalog/in-ear" class="nav__link">Вкладыши</a></li>
+          </ul>
+        </li>
+        <li><a href="https://example.com" target="_blank" class="nav__link">Партнёры</a></li>
+        <li><a href="/files/price.pdf" class="nav__link">Прайс</a></li>
+      </ul>
+
+      <!-- БЭМ - блок__элемент--модификатор -->
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="page-title">Каталог наушников</h1>
+    <p class="lead">Выберите модель — доставим за 2 дня.</p>
+    <p>Все цены указаны с учётом НДС.</p>
+
+    <section class="catalog">
+      <article class="card">
+        <h2 class="card__title">Sony WH-100</h2>
+        <p class="card__price">12 990 ₽</p>
+        <button class="btn btn--primary">В корзину</button>
+      </article>
+
+      <article class="card card--sale">
+        <h2 class="card__title">JBL Tune 50</h2>
+        <p class="card__price">5 990 ₽</p>
+        <button class="btn btn--primary" disabled>В корзину</button>
+      </article>
+
+      <article class="card">
+        <h2 class="card__title">Apple AirPods</h2>
+        <p class="card__price">14 990 ₽</p>
+        <button class="btn" disabled>Нет в наличии</button>
+      </article>
+    </section>
+
+    <ol class="steps">
+      <li class="step">Корзина</li>
+      <li class="step step--current">Доставка</li>
+      <li class="step">Оплата</li>
+      <li class="step">Готово</li>
+    </ol>
+
+    <form class="form">
+      <input type="text" placeholder="Ваше имя" required>
+      <input type="email" placeholder="Email">
+      <button class="btn btn--primary">Отправить</button>
+    </form>
+  </main>
+</body>
+</html>

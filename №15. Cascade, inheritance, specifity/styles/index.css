@@ -1,0 +1,94 @@
+/* Порядок правил */
+/* CSS -cascading stylesheet */
+
+.btn {
+    background-color: blue;
+    color: antiquewhite;
+    padding: 8px 16 px;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: brown;
+}
+
+.card__title {
+    font-size: 20px;
+    color:aquamarine;
+}
+
+/* Specificity (спецефичность) */
+
+/* #promo p {
+    color: purple;
+}
+
+article.card p {
+    color: blue;
+}
+
+.card__text {
+    color: green;
+}
+
+p {
+    color: red;
+} */
+
+/* Inheritance - наследование */
+.card {
+    color: blue;
+    font-family: Georgia, serif;
+    text-align: center;
+    border: 2px solid;
+    background: white;
+    padding: 16 px;
+}
+
+a {
+    color: inherit;
+}
+
+.card__text {
+    color: green; 
+}
+
+#promo p {
+    color: purple;
+}
+
+/* important - самый сильный даже пребивает inline стили +/ */
+
+/* Порядок действий браузера по каскадности для элемента; */
+/* 1- собирает все обращение к элементу по всему проекту  */
+/* 2- ещет, используется ли !important для элемента */
+/* 3 - сравнивает специфичность : у кого больше, тот побеждает */
+/* 4 - специфичность равна => побеждает то, что ниже */
+/* 5 - никто ничего не задал? Свойство наслудуемое => берем у родителея => если и у родителя нет стилей, значит  - БЕРЕМ у значения по умолчанию (то есть браузер) */
+
+
+@layer reset, base, components, utils;
+
+@layer reset {
+    #promo p {
+        color: purple;
+    }
+}
+
+@layer base {
+    .card__text {
+        color: aqua;
+    }
+}
+
+@layer components {
+    .card p {
+        color: bisque;
+    }
+}
+
+@layer utils {
+    .card__title + p {
+        color: brown;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Основные HTML-форм</title>
+</head>
+
+<h1>Основные HTML-форм</h1>
+
+<form>
+  <h2>Анкета студента</h2>
+  <p>Заполните данные для регистрации.</p>
+
+  <label>
+    Ваше имя:
+    <br>
+    <input>
+  </label>
+
+  <br>
+
+  <label for="your_last_name">Ваша фамилия:</label>
+  <br>
+  <input id="your_last_name">
+  <!-- label - это подпись/вопрос к полю ввода -->
+  <!-- 2 способа привязки label и input: 1 - поместить input внутри label, 2 - связать через for (label) и id (input) -->
+
+</form>
+
+<form>
+  <h2>Auth</h2>
+
+  <label>
+    Your email:
+    <input type="email">
+  </label>
+
+  <br>
+
+  <label>
+    Your password:
+    <input type="password">
+  </label>
+  <br>
+
+  <!-- type email - для ввода электронной почты -->
+  <!-- type password - для ввода пароли -->
+</form>
+
+<form>
+  <label>
+    Возраст:
+    <input type="number">
+  </label>
+
+  <br>
+
+  <label>
+    Номер телефона:
+    <input type="tel">
+  </label>
+
+  <!-- type number - для ввода чисел -->
+  <!-- type tel - для ввода номера телефона -->
+</form>
+
+<form>
+  <label type="checkbox"> Я согласен с правилами
+  </label>
+
+  <br>
+
+  <p>Какие технологии вы знаете?</p>
+  <label>
+    <input type="checkbox">HTML
+  </label>
+  <!-- typy checkbox - позволяет выбрать несколько вариантов -->
+</form>
+
+<hr>
+
+<form>
+  <h2>Выберите формат обучения: </h2>
+  <label>
+    <input type="radio" name="format">Онлайн
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="format">Офлайн
+  </label>
+  <br>
+  <label>
+    <input type="radio" name="format">Гибрид
+  </label>
+
+  <!-- radio - это радиокнопки. У . одного вопроса должен совпадать name. Тогда браузер оставит выбранным только один вариант -->
+
+  <form>
+    <label>
+      Выберите файл:
+      <input type="file" multiple>
+    </label>
+  </form>
+
+  <!-- type file - нужен для того, чтобы загружать файлы -->
+</form>
+
+<form>
+  <label>
+    Выберите город:
+    <br>
+    <select>
+      <option>Манас</option>
+      <option>Бишкек</option>
+      <option>Ош</option>
+      <option>Базар-Коргон</option>
+      <option>Караван</option>
+      <option selected>Узген</option>
+    </select>
+  </label>
+
+</form>
+
+</body>
+</html>

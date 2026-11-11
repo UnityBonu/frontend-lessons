@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Корзина</title>
+</head>
+<body>
+
+  <h1>Ваша корзина</h1>
+
+  <main>
+    <div id="cart-container">
+      <article>
+        <h2>AirPods Pro</h2>
+        <h4>Цена: 19 990 сом</h4>
+      </article>
+      <article>
+        <h2>Iphone 18 Pro</h2>
+        <h4>Цена: 160 000 сом</h4>
+      </article>
+      <article>
+        <h2>Magic Mouse</h2>
+        <h4>Цена: 9900 сом</h4>
+      </article>
+    </div>
+
+    <button id="clear-cart-btn">Очистить корзину</button>
+  </main>
+
+  <dialog id="cart-dialog">
+    <h2>Удалить все товары из корзины?</h2>
+
+    <p>Вы действительно хотите очистить корзину?</p>
+
+    <button id="cancel-btn">Отмена</button>
+    <button id="confirm-btn">Подтвердить</button>
+  </dialog>
+
+  <script>
+    const clearBtn = document.querySelector('#clear-cart-btn')
+    const cartDialogContainer = document.querySelector('#cart-dialog')
+    const cancelBtn = document.querySelector('#cancel-btn')
+    const confirmBtn = document.querySelector('#confirm-btn')
+    const cartContainer = document.querySelector('#cart-container')
+
+    clearBtn.addEventListener('click', () => cartDialogContainer.showModal())
+
+    cancelBtn.addEventListener('click', () => cartDialogContainer.close())
+
+    confirmBtn.addEventListener('click', () => {
+      alert('Вы успешно очистили корзину!')
+      cartDialogContainer.close()
+      cartContainer.remove()
+      clearBtn.remove()
+    })
+  </script>
+  <script>
+    const progressContainer = document.querySelector('#upload-progress')
+
+    let progressPercent = 0
+
+    function updateProgress() {
+      progressPercent++
+
+      progressContainer.value = progressPercent
+
+      if (progressPercent >= 99) {
+        return
+      }
+
+      let interval
+
+      if (progressPercent < 60) {
+        interval = 50
+      } else if (progressPercent < 90) {
+        interval = 300
+      } else {
+        interval = 1000
+      }
+
+      setTimeout(updateProgress, interval)
+    }
+
+    updateProgress()
+  </script>
+</body>
+</html>

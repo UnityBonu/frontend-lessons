@@ -1,0 +1,8 @@
+.tag {
+    display: imlline-block;
+    padding: 8px 16 px;
+    margin: 4px;
+    background: #e3e8ff;
+    color: #2f3f9c;
+    border-radius: 999px;
+}

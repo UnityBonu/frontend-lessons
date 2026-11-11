@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Иображение и медиаконтент</title>
+</head>
+<body>
+  <h1>Иображение и медиаконтент</h1>
+    <img src="images/photo-1433086966358-54859d0ed716.avif"
+    alt="Очень красивый кот"
+    >
+
+    <hr>
+
+    <img 
+    src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D"
+    width="30%" 
+    height="200px"
+    loading="eager"
+    >
+    <!-- alt - это описание изображания. Нужен для доступности и для случая, когда ломается изображание -->
+    
+  <figure>
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuIUUI9DP6_wCh_PzUEVvlMHPBVqGb3FDu7Zic2XTOE4V7WBA4_LMBBfs&s=10"
+        alt="Милая обезьянка"
+        width="200"
+      >
+      <figcaption>Милая обезьянка, которая улыбается</figcaption>
+    </figure>
+
+  <!-- figure - как фотография в учебнике вместе с ее оформление -->
+  <!-- figcaption - подписась по ней -->
+
+  <picture>
+    <source
+      srcset="photo.webp"
+      type="image/avif"
+    >
+
+    <source
+      srcset="photo.avif"
+      type="image/avif"
+    >
+
+    <img
+    src="photo.jpg"
+    alt="Природа Кыргызстана"
+    >
+  </picture>
+
+  <img
+    sre="coffee-800.jpg"
+    alt="Кофе в чашке рядом с круассаном с видом на Эйфелеву башню"
+    srcset="
+    coffee-400.jpg 400W,
+    coffee-800.jpg 9800w,
+    coffee-1200. jpg 1200w, 
+    coffee-1800. jpg 1800w"
+  >
+<!-- picture - "Умный выбор изображения"  -->
+<!-- source - один из вариантов изображения -->
+<!-- srcset - список кандидатов или же набор вариантов -->
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Размеры и единицы</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <article class="article">
+    <h2>Длинный текст</h2>
+    <p>Глаз устаёт, если строка очень длинная. Поэтому у колонки текста есть потолок: max-width. На телефоне колонка сжимается, на большом экране стоит в центре.</p>
+  </article>
+
+  <img class="photo" src="https://images.unsplash.com/photo-1792802140887-496b712f1046?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Моя картинка">
+
+  <!-- min-width: кнопки не крошечные -->
+  <div>
+    <button class="btn">OK</button>
+    <button class="btn">Нет</button>
+    <button class="btn">Сохранить файл</button>
+  </div>
+
+  <!-- min-height: заметка растёт с текстом -->
+  <div class="note">
+    <h3>Заметка</h3>
+    <p>Купить хлеб.</p>
+    <p>Сдать домашку.</p>
+  </div>
+
+  <!-- max-height + overflow: auto -->
+  <div class="chat">
+    <p>Привет!</p>
+    <p>Ты сделал домашку?</p>
+    <p>Почти. Не понял min-height.</p>
+    <p>Это пол: меньше нельзя, больше можно.</p>
+    <p>А max-height?</p>
+    <p>Потолок. Выше не вырастет.</p>
+    <p>А куда девается лишнее?</p>
+    <p>Для этого есть overflow.</p>
+  </div>
+
+  <!-- overflow: hidden обрезает углы -->
+  <div class="cover">
+    <img src="https://images.unsplash.com/photo-1792802140887-496b712f1046?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Обложка">
+    <p>Подпись под картинкой</p>
+  </div>
+
+  <!-- %: шкала прогресса -->
+  <div class="progress">
+    <div class="progress__fill"></div>
+  </div>
+</body>
+</html>

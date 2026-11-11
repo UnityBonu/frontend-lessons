@@ -1,0 +1,10 @@
+body {
+    font-family: system-ui, sans-serif;
+    line-height: 3,5;
+    padding: 24px;
+    background: #eef0f7;
+}
+
+body > * + * {
+    margin-top: 40px;
+}

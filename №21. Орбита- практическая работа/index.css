@@ -1,0 +1,25 @@
+
+/* ===== 1. База страницы ===== */
+body {
+  font-family: "Golos Text", Arial, sans-serif;
+  line-height: 1.6;
+  color: #e8ecff;
+  background-color: #0b1026;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Unbounded", Arial, sans-serif;
+  line-height: 1.2;
+}
+
+a {
+  color: #ffcf5a;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}

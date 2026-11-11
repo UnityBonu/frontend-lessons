@@ -1,0 +1,87 @@
+body {
+  padding: 24px;
+  background-color: #eef0f7;
+}
+
+/* отступ между примерами */
+body > * + * {
+  margin-top: 40px;
+}
+
+/* max-width: колонка текста */
+.article {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #fff;
+  border-radius: 16px;
+}
+
+/* max-width: 100% у картинки */
+.photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* min-width: кнопки не крошечные */
+.btn {
+  min-width: 140px;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #3b5bfd;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* min-height: заметка растёт с текстом */
+.note {
+  max-width: 320px;
+  min-height: 160px;
+  padding: 20px;
+  background: #fff7cc;
+  border-radius: 12px;
+}
+
+/* max-height + overflow: auto */
+.chat {
+  max-width: 320px;
+  max-height: 180px;
+  overflow: auto;
+  padding: 12px;
+  background-color: #fff;
+  border: 2px solid #c9cfe3;
+  border-radius: 12px;
+}
+
+/* overflow: hidden обрезает углы */
+.cover {
+  max-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+.cover img {
+  display: block;
+  max-width: 100%;
+}
+.cover p {
+  padding: 12px 16px;
+}
+
+/* %: шкала прогресса */
+.progress {
+  width: 100%;
+  max-width: 400px;
+  height: 20px;
+  background-color: #dfe3ee;
+  border-radius: 999px;
+}
+.progress__fill {
+  width: 65%;
+  height: 100%;
+  background-color: #22b07d;
+  border-radius: 999px;
+}

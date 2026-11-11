@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Продвинутые HTML-формы</title>
+</head>
+
+<body>
+  <h1>Продвинутые HTML-формы</h1>
+
+  <form>
+    <label>Имя
+      <input type="text" name="username">
+    </label>
+    <select name="city">
+      <option>Манас</option>
+      <option>Ош</option>
+      <option>Бишкек</option>
+      <option>Узген</option>
+    </select>
+
+    <button type="submit">Показать данные</button>
+
+    <!-- name - это ключ,по которому браузер определяет введенное поле и отправляет на сервер -->
+  </form>
+
+  <p>Формат обучения</p>
+  <labebl>
+    <input type="radio" name="format" value="online">Онлайн
+  </labebl>
+  labebl>
+  <input type="radio" name="format" value="online">Офлайн
+  </labebl>
+  labebl>
+  <input type="radio" name="format" value="online">Гибрид
+  </labebl>
+
+  <br>
+
+  <button>Отправить</button>
+
+  <!-- value - это предзаполненное значение для полей формы -->
+  <!-- value - для type radio определяет значение для каждой из полей радио-кнопок -->
+
+  <from>
+    <label>
+      Ваше имя:
+      <input type="text" name="first_name" placeholder="Абай" required>
+    </label>
+
+    <!-- placeholder - заполнитель для пола в виде подсказок -->
+    <!-- required - позваляет помтвить валидацию для инпута, чтобы пользователь не отпрвил пустое значение -->
+
+    <br><br>
+    <button>Отправить/button>
+  </from>
+
+  <form>
+    <label>
+      <!-- Выберите модель Iphone
+      <br> -->
+      <select name="iphone" required>
+        <option disabled selected value="">Выбрать модель Iphone</option>
+        <option value="iphone-17">Iphone 17</option>
+        <option value="iphone-17-pro">Iphone 17 Pro</option>
+        <option value="iphone-17-pro-max">Iphone 17 Pro Max</option>
+        <option value="iphone-18-pro">Iphone 18 Pro</option>
+        <option value="iphone-18-pro-max">Iphone 18 Pro Max</option>
+        <option value="iphone-18-duo">Iphone 18 Duo</option>
+      </select>
+    </label>
+
+    <button>Отправить</button>
+  </form>
+
+  <hr> <br>
+
+  <form>
+    <label>Страна
+      <input name="country" value="Кыргызстан" disabled>
+    </label>
+    <br>
+    <label>Город
+      <input name="city" value="Бишкек" readonly>
+    </label>
+
+    <br>
+
+    <button type="submit">Отправить</button>
+  </form>
+
+  <hr> <br>
+
+  <form>
+    <label>
+      Возраст
+      <input type="number" name="age" placeholder="18" min="16" max="25">
+    </label>
+
+    <br>
+    <button>Отправить</button>
+  </form>
+
+  <hr> <br>
+
+  <form>
+    <label>
+      Дата покупки билета:
+      <input type="date" name="date" min="2026-10-04" max="2026-10-18" required>
+    </label>
+
+    <br>
+    <button>Отправить</button>
+  </form>
+
+  <hr><br>
+
+  <form>
+    <input type="number" required min="100" max="20000" step="100" placeholder="500 с">
+    <br>
+    <button>Отправить</button>
+  </form>
+
+  <hr><br>
+
+  <form>
+    <input 
+      type='password'
+      placeholder="Введите пароль"
+      name="password"
+      required=""
+      minlength="8"
+      maxlength="15"
+    >
+    <!-- minlength и maxlength для ограничения символов, а max/min для чисел-->
+    <!-- otp - one time password -->
+
+  <hr><br>
+  <form>
+    <input
+    type="tel"
+    placeholder="+996(557) 709-008"
+    name="phone_number"
+    pattern="\+996\ (\d{3}) \d{3}-\s{3}"
+    >
+    <br>
+    <button>Отправить</button>
+  </form>
+
+  <hr><br>
+
+  <form>
+    <input
+    type="email"
+    placeholder="Введите email"
+    name="email"
+    required
+    autocomplete="email"
+    >
+    <!-- autocomplete - подсказка/помощь от браузера для автозаполнения поля -->
+    <br>
+    <button>Send</button>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>Регистрация пользователя</legend>
+
+      <fieldset>
+        <legend>Личные данные</legend>
+
+        <input placeholder="Введите имя" required name="first_name">
+        <br>
+        <input placeholder="Введите фамилию" required name="last_name">
+        <br>
+        <input type="number" placeholder="Введите возраст" required name="age">
+      </fieldset>
+      <br>
+      
+      <fieldset>
+        <legend>Авторизационные данные</legend>
+
+        <input type="email" placeholder="Введите email" required name="email">
+        <br>
+        <input type="password" placeholder="Введите пароль" required name="password">
+      </fieldset>
+      <br>
+
+      <button>Зарегистрироваться</button>
+    </fieldset>
+  </form>
+  
+</body>
+</html>

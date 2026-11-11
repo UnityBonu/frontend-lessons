@@ -1,0 +1,14 @@
+
+/* reset.css: сбрасываем стандартные отступы браузера */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* поля формы сами не берут шрифт страницы, просим их об этом */
+input,
+select,
+button {
+  font: inherit;
+}

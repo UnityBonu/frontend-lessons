@@ -1,0 +1,18 @@
+/* 1. Селектор тега. Обращение ко всем указанным тегам по его названию */
+
+p {
+    color:bisque
+}
+
+/* 2. Селектор класса */
+
+.button{
+    padding: 10 px;
+    color:blueviolet;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: white;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif';
+}

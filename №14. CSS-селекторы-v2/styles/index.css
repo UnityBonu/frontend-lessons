@@ -1,0 +1,101 @@
+/* ====== Селектор по тегу ======= */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: #0066cc;
+}
+
+p {
+  color: #444;
+}
+
+/* ====== Селектор по классу "." ======= */
+.card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.card__title {
+  font-size: 20px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: #0066cc;
+  color: #fff;
+}
+
+.card--sale {
+  border-color: #e53935;
+}
+
+.card.card--sale {
+  background-color: #fff5f5;
+}
+
+/* 
+  - Точка обязательная для работы с классами
+  - У элемента HTML может быть несколько классов
+  - Имена классов: латиница, без пробелов. Принцип: блок__элемент--модификатор ( методология БЭМ )
+*/
+
+/* ====== Селектор по ID "#" ======= */
+#page-title {
+  color: #e53935;
+}
+
+/* 
+  - id на странице должен быть уникальным
+  - В CSS на практике #id почти не используется
+  - Зато id нужен для других задач: использование в label, для якорных ссылок и для JavaScript
+*/
+
+
+/* ====== Универсальный селектор "*" ======= */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ====== Селекторы атрибутов ======= */
+.btn[disabled] {
+  background-color: #ccc;
+  color: #777;
+  cursor: not-allowed;
+}
+
+input[required] {
+  border: 2px solid #e53935;
+}
+
+input[type="email"] {
+  border: 2px solid #0066cc;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+a[href$=".pdf"] {
+  font-weight: bold;
+}
+
+a[href*="ear"] {
+  background-color: #fff3cd;
+}
+
+
+/* 
+  "^" - означает "начинается с"
+  "$" - означает "заканчивается на"
+  "*" - означает "содержит" или "есть ли???"
+*/

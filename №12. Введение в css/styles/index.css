@@ -1,0 +1,26 @@
+/* Комментарии я тоже принимаю */
+h1 {
+    background-color: aqua;
+    color: brown;
+    text-align: center;
+}
+
+div{
+    color: aquamarine;
+    background-color: blue;
+    width: 320px; 
+    height: 200px; 
+    padding: 24px; 
+    margin: 20px;
+    border: 1px solid;
+    border-radius: 12 px;
+}
+
+/* color - цвет текста
+background-color - задний фон
+width - ширина
+height - высота
+padding - внутренний отступ 
+margin - внешний отступ
+border - границы 
+border-radius - закругление углов */

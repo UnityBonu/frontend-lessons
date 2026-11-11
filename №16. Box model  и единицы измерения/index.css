@@ -1,0 +1,61 @@
+.box {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+
+  /* padding: 10px 20px 30px 40px; */
+
+  /* padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  padding-left: 40px; */
+
+  border: 5px solid #333;
+  margin: 30px;
+  
+  background-color: #cce5ff;
+}
+
+/* margin, padding - можно задать следующими значениями:
+  1 - 20px 40px ( 1 значение вверх-вниз, 2 значение лево-право )
+  2 - 10px 20px 30px 40px ( начиная сверху по часовой стрелке на все 4 стороны )
+  3 - каждую сторону по отдельности: padding-top, padding-right, margin-bottom, margin-left
+*/
+
+.a {
+  margin-bottom: 30px;
+  background-color: #cce5ff;
+}
+
+.b {
+  margin-top: 20px;
+  background-color: #ffe0b2;
+}
+
+
+/* По умолчанию, внешний отступ соседних блоков не суммируется */
+
+.example {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid #333;
+  background-color: #cce5ff;
+  margin-bottom: 16px;
+  box-sizing: content-box;
+}
+
+.example--border {
+  box-sizing: border-box;
+}
+
+
+/* Min, Max */
+
+.box-section {
+  padding: 20px;
+}
+
+.page {
+  min-width: 600px;
+  background-color: #e8f5e9;
+}
