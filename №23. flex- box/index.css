@@ -1,0 +1,235 @@
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  padding: 24px;
+  background: #f5f5f7;
+}
+
+/* отступ между примерами */
+body > * + * {
+  margin-top: 40px;
+}
+
+/* Ряд и колонка */
+.row {
+  display: flex;
+  flex-direction: column-reverse;
+  background: #fff;
+  border: 2px dashed #0071e3;
+}
+.row__box {
+  width: 80px;
+  height: 80px;
+  background: #ff3b30;
+  color: #fff;
+  font-weight: 700;
+  border: 2px solid #fff;
+}
+
+/* «Назад» и «Далее» по краям */
+.pager {
+  display: flex;
+  justify-content: space-between;
+  max-width: 420px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 12px;
+}
+.pager__btn {
+  padding: 8px 16px;
+  background: #0071e3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* Ровно по центру */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 220px;
+  background: linear-gradient(135deg, #0071e3, #8944ab);
+  border-radius: 16px;
+}
+.hero__title {
+  color: #fff;
+  font-size: 28px;
+}
+
+/* Шапка сайта */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #1d1d1f;
+  color: #fff;
+  border-radius: 12px;
+}
+.logo {
+  font-size: 20px;
+  font-weight: 800;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* flex-grow: делим остаток */
+.row {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: #fff;
+  border: 2px dashed #0071e3;
+}
+.box {
+  flex-basis: 100px;
+  height: 70px;
+  padding: 8px;
+  color: #fff;
+  font-weight: 700;
+}
+.box--a { background: #ff3b30; }
+.box--b { background: #0071e3; flex-grow: 1; }
+.box--c { background: #248a3d; flex-grow: 2; }
+
+/* Три блока в тесноте */
+.row {
+  display: flex;
+  background: #fff;
+  border: 2px dashed #0071e3;
+}
+.row__box {
+  width: 200px;
+  height: 80px;
+  padding: 8px;
+  color: #fff;
+  font-weight: 700;
+}
+.row__box--a { background: #ff3b30; }
+.row__box--b { background: #0071e3; flex-shrink: 0; }
+.row__box--c { background: #248a3d; }
+
+/* flex-basis: размер до раздачи */
+.row {
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: #fff;
+  border: 2px dashed #0071e3;
+}
+.box {
+  flex-basis: 100px;
+  height: 70px;
+  padding: 8px;
+  color: #fff;
+  font-weight: 700;
+}
+.box--a { background: #ff3b30; flex-basis: 200px; }
+.box--b { background: #0071e3; }
+.box--c { background: #248a3d; }
+
+/* Меню слева и контент */
+.layout {
+  display: flex;
+  gap: 12px;
+}
+.sidebar {
+  flex: 0 0 160px;
+  padding: 12px;
+  background: #1d1d1f;
+  color: #fff;
+  border-radius: 12px;
+}
+.content {
+  flex: 1;
+  padding: 12px;
+  background: #fff;
+  border-radius: 12px;
+}
+
+/* Поиск: поле и кнопка */
+.search {
+  display: flex;
+  gap: 8px;
+  max-width: 480px;
+}
+.search__input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 2px solid #d2d2d7;
+  border-radius: 10px;
+}
+.search__btn {
+  padding: 10px 18px;
+  background: #30d158;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+/* Комментарий с аватаркой */
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 460px;
+  padding: 14px;
+  background: #fff;
+  border-radius: 14px;
+}
+.comment__avatar {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff9f0a, #ff375f);
+}
+.comment__name {
+  font-weight: 700;
+}
+
+/* Карточки с переносом */
+.planets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.planet {
+  flex: 1 1 180px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(28, 34, 56, 0.1);
+}
+
+/* Кнопка внизу карточки */
+.products {
+  display: flex;
+  gap: 16px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 8px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 14px;
+}
+.product__btn {
+  margin-top: auto;
+  padding: 10px;
+  background: #ff3b30;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 700;
+}

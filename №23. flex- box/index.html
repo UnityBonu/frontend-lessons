@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Ряд и колонка -->
+  <div class="row">
+    <div class="row__box">1</div>
+    <div class="row__box">2</div>
+    <div class="row__box">3</div>
+  </div>
+
+  <!-- «Назад» и «Далее» по краям -->
+  <nav class="pager">
+    <a class="pager__btn" href="#">← Назад</a>
+    <span>Стр. 3 из 10</span>
+    <a class="pager__btn" href="#">Далее →</a>
+  </nav>
+
+  <!-- Ровно по центру -->
+  <section class="hero">
+    <h2 class="hero__title">Скоро открытие</h2>
+  </section>
+
+  <!-- Шапка сайта -->
+  <header class="header">
+    <div class="logo">PIXEL</div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- flex-grow: делим остаток -->
+  <div class="row">
+    <div class="box box--a">A</div>
+    <div class="box box--b">B</div>
+    <div class="box box--c">C</div>
+  </div>
+
+  <!-- Три блока в тесноте -->
+  <div class="row">
+    <div class="row__box row__box--a">A</div>
+    <div class="row__box row__box--b">B</div>
+    <div class="row__box row__box--c">C</div>
+  </div>
+
+  <!-- flex-basis: размер до раздачи -->
+  <div class="row">
+    <div class="box box--a">A</div>
+    <div class="box box--b">B</div>
+    <div class="box box--c">C</div>
+  </div>
+
+  <!-- Меню слева и контент -->
+  <div class="layout">
+    <aside class="sidebar">Меню</aside>
+    <main class="content">Здесь текст страницы. Он занимает всё оставшееся место.</main>
+  </div>
+
+  <!-- Поиск: поле и кнопка -->
+  <form class="search">
+    <input class="search__input" type="search" placeholder="Найти фильм" aria-label="Поиск">
+    <button class="search__btn" type="submit">Найти</button>
+  </form>
+
+  <!-- Комментарий с аватаркой -->
+  <article class="comment">
+    <div class="comment__avatar"></div>
+    <div>
+      <p class="comment__name">Алина</p>
+      <p>Очень полезный урок! Теперь понятно, как поставить блоки в ряд и почему аватарка раньше была овальной.</p>
+    </div>
+  </article>
+
+  <!-- Карточки с переносом -->
+  <section class="planets">
+    <article class="planet">
+      <h3>Меркурий</h3>
+      <p>Ближе всех к Солнцу.</p>
+    </article>
+    <article class="planet">
+      <h3>Венера</h3>
+      <p>Самая горячая.</p>
+    </article>
+    <article class="planet">
+      <h3>Земля</h3>
+      <p>Наш дом.</p>
+    </article>
+    <article class="planet">
+      <h3>Марс</h3>
+      <p>Красная планета.</p>
+    </article>
+    <article class="planet">
+      <h3>Юпитер</h3>
+      <p>Самая большая.</p>
+    </article>
+  </section>
+
+  <!-- Кнопка внизу карточки -->
+  <section class="products">
+    <article class="product">
+      <h3>Наушники</h3>
+      <p>Тихие и лёгкие.</p>
+      <button class="product__btn" type="button">Купить</button>
+    </article>
+    <article class="product">
+      <h3>Часы</h3>
+      <p>Шаги, пульс, сон, погода и будильник. Заряд на неделю.</p>
+      <button class="product__btn" type="button">Купить</button>
+    </article>
+    <article class="product">
+      <h3>Колонка</h3>
+      <p>Громкая, не боится воды.</p>
+      <button class="product__btn" type="button">Купить</button>
+    </article>
+  </section>
+</body>
+</html>
